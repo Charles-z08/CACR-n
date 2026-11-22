@@ -97,7 +97,11 @@ By default, the trained model checkpoints are saved in:
 ```
 ./pt
 ```
+需要将init.py中的from .DLF import DLF修改，DLF应该是残留
+utils在trains目录下，需要修改绝对路径：from trains.utils import assign_gpu, setup_seed
 
+缺少库：python3 -m pip install einops
+python3 -m pip install fvcore
 
 ## Citation
 
