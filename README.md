@@ -79,6 +79,16 @@ dataset_name = "mosei"
 Then run:
 
 ```
+conda activate cacr：环境激活
+python - <<'PY'
+import torch
+print("PyTorch:", torch.__version__)
+print("CUDA available:", torch.cuda.is_available())
+print("CUDA version:", torch.version.cuda)
+if torch.cuda.is_available():
+    print("GPU:", torch.cuda.get_device_name(0))
+PY：检查配置环境
+
 python3 train.py
 ```
 
